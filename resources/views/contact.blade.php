@@ -38,18 +38,18 @@
                     </div><br>
                     <div class="groupe_input_text">
                         <div>
-                            <input type="text" name="nom" id="" placeholder="Name">
+                            <input type="text" name="nom" id="" placeholder="Name" required>
                         </div><br>
                         <div>
-                            <input type="text" name="email" id="" placeholder="Email">
+                            <input type="text" name="email" id="" placeholder="Email" required>
                         </div><br>
                         <div style="display: flex; flex-direction:row; gap:10px;">
-                        <input  name="tel" type="text" value="" id="phone" placeholder="Phone number">
-                        <span id="valid-msg" class="hide" style="color:green">valid</span>
+                        <input  name="tel" type="text" value="" id="phone" placeholder="Phone number" required>
+                        <span id="valid-msg" class="hide" style="color:green"></span>
                         <span id="error-msg" class="hide" style="color:red"></span>
                         </div><br>
                         <div>
-                            <textarea class="message_contact" name="message" id="" cols="30" rows="3" placeholder="Message"></textarea>
+                            <textarea class="message_contact" name="message" id="" cols="30" rows="3" placeholder="Message" required></textarea>
                         </div>
                         <button type="submit" id="send" class="btn btn-success">Send</button>
                     </div>

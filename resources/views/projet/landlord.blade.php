@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
+
     <title>Hello, world!</title>
 
 <style>
@@ -25,7 +25,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     /* background-position: ; */
-    position: absolue; 
+    position: absolue;
    }
 
 .form-box{
@@ -226,9 +226,9 @@
 }
 
 @media screen and (max-width: 988px) {
-     
+
     .card2_landlord{
-      
+
     }
     .marginTop_landlord{
         margin-top:20px;
@@ -251,7 +251,7 @@
        width: 100%;
        margin-top:140%;
        height: 350vh;
-    } 
+    }
     .col-lg-6{
         margin-top:80%;
     }
@@ -263,7 +263,7 @@
     margin-top:160%;
 
      }
-    
+
 }
 @media screen and (max-width: 950px) {
     .timeline_section{
@@ -288,7 +288,7 @@
        width: 100%;
        margin-top:200%;
        height: 450vh;
-    } 
+    }
     .col-lg-6{
         margin-top:150%;
     }
@@ -307,7 +307,7 @@
        width: 100%;
        margin-top:250%;
        height: 460vh;
-    } 
+    }
     .col-lg-6{
         margin-top:200%;
     }
@@ -331,7 +331,7 @@
         width:343px;
         margin:23px;
     }
-   
+
 }@media screen and (max-width:575px){
     .timeline_section{
         height:300vh;
@@ -345,11 +345,11 @@
        width: 100%;
        margin-top:355%;
        height: 460vh;
-    } 
+    }
     .col-lg-6{
         margin-top:200%;
     }
-   
+
 }
 
 </style>
@@ -379,55 +379,59 @@
                         @csrf
                             <h2 class="text-center">Earn more from your <br>property,do less</h2>
                             <p class="text-center">Find out if your property meets our criteria</p>
-                            <input type="text" name="nom" placeholder="Nom" class="form-control mb-3" required>     
-                            <input type="text" name="email" placeholder="Email" class="form-control mb-3" required>    
-                            <input type="number" name="numero_tel" placeholder="Numero tel" class="form-control mb-3" required>      
+                            <input type="text" name="nom" placeholder="Nom" class="form-control mb-3" required>
+                            <input type="text" name="email" placeholder="Email" class="form-control mb-3" required>
+
+                            <div style="display: flex; flex-direction:row; gap:10px;">
+                                <input   name="numero_tel" type="text" value="{{ old('telephone') }}" id="phone" placeholder="Phone number" style="width:250px" class="form-control @error('telephone')  is-invalid @enderror" required autocomplete="Telephone" autofocus>
+                                <span id="valid-msg" class="hide" style="color:green"></span>
+                                <span id="error-msg" class="hide" style="color:red"></span>
+                            </div>
+                            {{-- <input type="number" name="numero_tel" placeholder="Numero tel" class="form-control mb-3" required>   --}}
+
+
                             <h5>Property details</h5>
                             <div class="row">
                                 <div class="col">
-                                
+
                                   <label for="citi" class="form-label">City</label>
                                   <select name="city" class="form-select mb-3 text-secondary" id="citi_id" required>
                                     @foreach ($cities as $citi)
-                                    
+
                                     <option value="{{ $citi->nomcity }}">{{ $citi->nomcity }}</option>
                                      @endforeach
                                      </select>
-                                  
+
                                 </div>
 
                                 <div class="col">
-                                
+
                                 <label for="area" class="form-label">Area</label>
                                   <select name="area" class="form-select mb-3 text-secondary" id="area_id" required>
                                     @foreach ($areas as $area)
-                                    
+
                                     <option value="{{ $area->nomarea}}">{{ $area->nomarea }}</option>
                                      @endforeach
                                      </select>
-                                  
+
                                 </div>
 
-                               
+
                             </div>
                             <div class="text">
                                 <input type="number" name="nombre_chambre" placeholder="Nombre de chambre" class="form-control mb-3" required>
                             </div>
-                            
-                            <div class="row"> 
-                                <!-- <div class="col">                             -->
+
+                            <div class="row">
                                     <span>Property picture</span>
                                     <input type="file" name="photo" class="form-control mb-3" required>
-                                <!-- </div>   -->
                                <span>Property type </span><br>
                                 <input type="text" name="type_property" placeholder="room/appartement/conference room" class="form-control mb-3" required>
-                               <!-- <span>Availability</span><br>
-                                <input type="text" name="date_of_availability" placeholder="date of availability" class="form-control mb-3"> -->
-                                <div class="col">     
+
+                                <div class="col">
                                     <label for="price" class="form-label">Price in £</label>
                                     <input type="number" name="price" value="" placeholder="£......" class="form-control mb-3" required>
-                                </div>    
-                                <!-- <span></span> -->
+                                </div>
                                 <div class="col">
                                     <label for="bath" class="form-label">how many Bath</label>
                                     <select name="bath" id=""  class="form-select mb-3 text-secondary" required>
@@ -438,9 +442,7 @@
                                         <option value="5">5</option>
                                     </select>
                                 </div>
-                                 <!-- <input type="number" name="bath" value="" placeholder="" class="" style="width:40px; border:non;" class="form-control mb-2"> -->
-                                 <!-- <span>Wifi</span> -->
-                                 <!-- <input type="checkbox" name="wifi" value="wifi" placeholder="" class="" style=""> -->
+
                                  <div class="col">
                                     <label for="wifi" class="form-label">Wifi</label>
                                     <select name="wifi" id="" class="form-select mb-3 text-secondary" required>
@@ -450,8 +452,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                 <!-- <span>City view</span>
-                                 <input type="checkbox" name="city_view" value="city view" placeholder="" class="" style=""> -->
+
                                  <div class="">
                                     <label for="city_view" class="form-label">City view</label>
                                     <select name="city_view" id="" class="form-select mb-3 text-secondary" required>
@@ -459,8 +460,7 @@
                                         <option value="No city view">No</option>
                                     </select>
                                 </div>
-                                 <!-- <span>Elevator</span>
-                                 <input type="checkbox" name="elevator" value="elevator" placeholder="" class="" style=""> -->
+
                                  <div class="">
                                     <label for="elevator" class="form-label">Elevator</label>
                                     <select name="elevator" id="" class="form-select mb-3 text-secondary" required>
@@ -468,8 +468,7 @@
                                         <option value="No elevator">No</option>
                                     </select>
                                 </div>
-                                 <!-- <span>Parking</span>
-                                 <input type="checkbox" name="parking" value="parking" placeholder="" class="" style=""> -->
+
                                  <div class="col">
                                     <label for="parking" class="form-label">Parking</label>
                                     <select name="parking" id="" class="form-select mb-3 text-secondary" required>
@@ -494,21 +493,6 @@
                                         <option value="12th">12th</option>
                                     </select>
                                 </div>
-                                
-                            
-                            <!-- <div class="text mb-3">
-                                <span>Level:</span>
-                                 <span>RC</span>
-                                 <input type="radio" name="level" value="RC" placeholder="" class="" style="">
-                                 <span>1st</span>
-                                 <input type="radio" name="level" value="1st" placeholder="" class="" style="">
-                                 <span>2nd</span>
-                                 <input type="radio" name="level" value="2nd" placeholder="" class="" style="">
-                                 <span>3rd</span>
-                                 <input type="radio" name="level" value="3rd" placeholder="" class="" style="">
-                                 <span>4th</span>
-                                 <input type="radio" name="level" value="4th" placeholder="" class="" style=""> -->
-                            <!-- </div> -->
 
                                 <div class="col">
                                     <label for="available" class="form-label">Available</label>
@@ -516,13 +500,13 @@
                                 </div>
                             </div><br><br>
                             <div class="div col-12">
-                                <button type="submit" class=" button btn btn-success">Submit</button>
-                            </div> 
+                                <button type="submit" id="send" class=" button btn btn-success">Submit</button>
+                            </div>
                         </form>
                     </div>
                 </div>
             </div>
-         </div>   
+         </div>
     </section>
     <section id="package" class="pt-5 pb-5">
         <div class="container-xl">
@@ -574,7 +558,7 @@
                 <div class="timeline left">
                     <div class="card">
                     <i class="fa-solid fa-envelope text-dark fs-1 fw-5 text-end px-4"></i>
-                    <div class="card-body p-4">     
+                    <div class="card-body p-4">
                         <h3 class="text-end">Get in touch</h3>
                         <p class="text-end mb-0">Ut id cras malesuada dolor.Consecteur eget malesuada enim.</p>
                         <p class="text-end">massa viverra mauris</p>
@@ -607,7 +591,7 @@
                 <i class="fa-solid fa-swatchbook text-dark fs-1 fw-5 text-start px-4"></i>
                 <div class="card-body p-4">
                     <h3>Time to decorate</h3>
-                    <p class="mb-0">Adipiscing magna ut justo, et.sem 
+                    <p class="mb-0">Adipiscing magna ut justo, et.sem
                         pellentesque eu risus euismod et.Sapien est tellus dapidus sed varius lorem tellus, turpis
                         nisl.Elementum scelerisque elit in nibh aliquet phasellus..</p>
                 </div>
@@ -705,7 +689,7 @@
                         <div class="text-body">
                              <i class="fa-solid fa-award text-dark fs-1 fw-5 text-start px-4"></i>
                             <h2>Faucibus egestas</h2>
-                            <p class="fw-lato fs-5 text-center ls-0em">Euismod commodo feugiat purus egestas diam. Facilisi sed senectus consequat risus. Porta purus nec dui odio vehicula.</p>   
+                            <p class="fw-lato fs-5 text-center ls-0em">Euismod commodo feugiat purus egestas diam. Facilisi sed senectus consequat risus. Porta purus nec dui odio vehicula.</p>
                         </div>
                     </div>
                 </div>
@@ -715,7 +699,7 @@
     <section class="">
         <div class="container py-5">
             <div class="mains d-flex justify-content-center">
-               
+
                 <div class="timelines-left w-50 px-5">
                     <div class="card-tes" style="height:500px">
                         <div class="title text-center" style="background-color: #B0F2B6;padding-top:23px">
@@ -723,17 +707,17 @@
                             <h1 class="text-center">12%</h1>
                             <h6>management fee</h6>
                         </div>
-                        <div class="card-body p-4">  
+                        <div class="card-body p-4">
                             <i class="bi bi-check2 text-dark d-flex justify-content-start"><h6>6 to 12 months</h6></i>
-                            <i class="bi bi-check2 text-dark d-flex justify-content-start"><h6>No maintenance</h6></i>   
-                            <i class="bi bi-check2 text-dark d-flex justify-content-start"><h6>No weekly cleaning</h6></i>   
-                            <i class="bi bi-check2 text-dark d-flex justify-content-start"><h6>No interior design</h6></i>   
+                            <i class="bi bi-check2 text-dark d-flex justify-content-start"><h6>No maintenance</h6></i>
+                            <i class="bi bi-check2 text-dark d-flex justify-content-start"><h6>No weekly cleaning</h6></i>
+                            <i class="bi bi-check2 text-dark d-flex justify-content-start"><h6>No interior design</h6></i>
                             <i class="bi bi-check2 text-dark d-flex justify-content-start"><h6>5% void</h6></i>
-                            <i class="bi bi-check2 text-dark d-flex justify-content-start"><h6>£24,900</h6></i>   
+                            <i class="bi bi-check2 text-dark d-flex justify-content-start"><h6>£24,900</h6></i>
                         </div>
                     </div>
                 </div>
-                    <h4 class="text-center py-5">VS</h4>       
+                    <h4 class="text-center py-5">VS</h4>
                 <div class="timelines-left w-50 px-5">
                     <div class="card-tes" style="height:500px">
                         <div class="title text-center" style="background-color: #B0F2B6;padding-top:23px">
@@ -741,16 +725,16 @@
                             <h1 class="text-center">Fixed price</h1>
                             <h6 class="py-1">monthly</h6>
                         </div>
-                        <div class="card-body p-4">     
+                        <div class="card-body p-4">
                             <i class="bi bi-check2 text-dark d-flex justify-content-start"><h6>3 to 5 years</h6></i>
-                            <i class="bi bi-check2 text-dark d-flex justify-content-start"><h6>Free maintenance</h6></i>   
-                            <i class="bi bi-check2 text-dark d-flex justify-content-start"><h6>Weekly cleaning</h6></i>   
-                            <i class="bi bi-check2 text-dark d-flex justify-content-start"><h6>Interior design</h6></i>   
+                            <i class="bi bi-check2 text-dark d-flex justify-content-start"><h6>Free maintenance</h6></i>
+                            <i class="bi bi-check2 text-dark d-flex justify-content-start"><h6>Weekly cleaning</h6></i>
+                            <i class="bi bi-check2 text-dark d-flex justify-content-start"><h6>Interior design</h6></i>
                             <i class="bi bi-check2 text-dark d-flex justify-content-start"><h6>No void</h6></i>
-                            <i class="bi bi-check2 text-dark d-flex justify-content-start"><h6>£30,000</h6></i>  
+                            <i class="bi bi-check2 text-dark d-flex justify-content-start"><h6>£30,000</h6></i>
                             <div class="text-center">
                                 <a href="#" class="btn btn-success text-center justify-content-center h-25">Get started</a>
-                            </div>      
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -766,7 +750,7 @@
                 <i class="bi bi-x-lg fs-2 py-5"></i>
             </div>
         </div>
-      
+
         <div class="d-flex">
             <div class="d-flex flex-column mb-3">
                 <div class="p-2 w-100 fs-3">Massa massa nulla rhoncus a quam consectetur sed purus, enim?</div>
@@ -835,15 +819,72 @@
                 <i class="bi bi-plus-lg fs-1 py-5"></i>
             </div>
         </div>
-        
+
     </section>
- 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+
+    <script>
+        var input = document.querySelector('#phone');
+        sendMsg = document.querySelector('#send');
+        errorMsg = document.querySelector('#error-msg');
+        validMsg = document.querySelector('#valid-msg');
+
+
+        var errorMap = ["Invalid number", "Invalid country code","Too short", "Too long"];
+
+
+        var iti = window.intlTelInput(input, {
+        utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+        var reset = function() {
+            input.classList.remove("error");
+            errorMsg.innerHTML = "";
+            errorMsg.classList.add("hide");
+             validMsg.classList.add("hide");
+
+        }
+
+        input.addEventListener('blur', function(){
+            reset();
+            if(input.value.trim()){
+                if(iti.isValidNumber()){
+                    validMsg.classList.remove('hide');
+                }else{
+                    input.classList.add('error');
+                    var errorCode = iti.getValidationError();
+                    errorMsg.innerHTML = errorMap[errorCode];
+                    errorMsg.classList.remove("hide");
+
+                    // recherche.style.transition = "all, 0.4s ease";
+                }
+                if (errorMap[errorCode]) {
+                    // alert('Veuillez-entrer le bon numéro de téléphone');
+                    sendMsg = document.querySelector('#send');
+                    sendMsg.style.display = "none";
+                    validMsg.style.display="none";
+                    }else{
+                        sendMsg = document.querySelector('#send');
+                        sendMsg.style.display = "flex";
+                        validMsg.style.display="block";
+                    }
+            }
+
+        });
+
+        input.addEventListener('change', reset);
+        input.addEventListener("keyup",reset);
+    </script>
+
+    <link rel="stylesheet" href="assets/build/css/intlTelInput.css" />
   </body>
 </html>
 @include('footer')
 
- 
-                           
-                            
-                      
+
+
+
+

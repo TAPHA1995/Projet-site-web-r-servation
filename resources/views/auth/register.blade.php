@@ -42,19 +42,15 @@
                             <label for="telephone" class="col-md-4 col-form-label text-md-end">{{ __('Téléphone') }}</label>
 
                             <div class="col-md-6">
-                                <input id="telephone" type="number" class="form-control @error('telephone') is-invalid @enderror" name="telephone" value="{{ old('telephone') }}" required autocomplete="Telephone" autofocus>
-
-                                @error('telephone')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
+                                <div style="display: flex; flex-direction:row; gap:10px;">
+                                    <input   name="telephone" type="text" value="{{ old('telephone') }}" id="phone" placeholder="Phone number" style="width:220px" class="form-control @error('telephone')  is-invalid @enderror" required autocomplete="Telephone" autofocus>
+                                    <span id="valid-msg" class="hide" style="color:green"></span>
+                                    <span id="error-msg" class="hide" style="color:red"></span>
+                                </div>
                             </div>
                         </div>
 
                         <div class="row mb-3" >
-                            <!-- <label for="type_user" class="col-md-4 col-form-label text-md-end">{{ __('Type_user') }}</label> -->
-
                             <div class="col-md-6">
                                 <input id="type_user" type="hidden" class="form-control @error('type_user') is-invalid @enderror" name="type_user" value="Client" required autocomplete="type_user" autofocus>
 
@@ -104,7 +100,7 @@
 
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" id="send" class="btn btn-primary">
                                     {{ __('Register') }}
                                 </button>
                             </div>
@@ -116,6 +112,63 @@
     </div>
 </div>
 <br><br><br>
+
+
+<script>
+    var input = document.querySelector('#phone');
+    sendMsg = document.querySelector('#send');
+    errorMsg = document.querySelector('#error-msg');
+    validMsg = document.querySelector('#valid-msg');
+
+
+    var errorMap = ["Invalid number", "Invalid country code","Too short", "Too long"];
+
+
+    var iti = window.intlTelInput(input, {
+    utilsScript:
+    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+});
+    var reset = function() {
+        input.classList.remove("error");
+        errorMsg.innerHTML = "";
+        errorMsg.classList.add("hide");
+         validMsg.classList.add("hide");
+
+    }
+
+    input.addEventListener('blur', function(){
+        reset();
+        if(input.value.trim()){
+            if(iti.isValidNumber()){
+                validMsg.classList.remove('hide');
+            }else{
+                input.classList.add('error');
+                var errorCode = iti.getValidationError();
+                errorMsg.innerHTML = errorMap[errorCode];
+                errorMsg.classList.remove("hide");
+
+                // recherche.style.transition = "all, 0.4s ease";
+            }
+            if (errorMap[errorCode]) {
+                // alert('Veuillez-entrer le bon numéro de téléphone');
+                sendMsg = document.querySelector('#send');
+                sendMsg.style.display = "none";
+                validMsg.style.display="none";
+                }else{
+                    sendMsg = document.querySelector('#send');
+                    sendMsg.style.display = "flex";
+                    validMsg.style.display="block";
+                }
+        }
+
+    });
+
+    input.addEventListener('change', reset);
+    input.addEventListener("keyup",reset);
+</script>
+
+<link rel="stylesheet" href="assets/build/css/intlTelInput.css" />
+
 @include('footer')
 <style>
     .card{

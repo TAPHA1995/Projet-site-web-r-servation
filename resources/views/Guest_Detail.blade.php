@@ -1,6 +1,6 @@
 
 
-<?php 
+<?php
 session_start();
 ?>
 <!DOCTYPE html>
@@ -8,13 +8,13 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <!--=============== REMIXICONS ===============-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
 
     <!--=============== SWIPER CSS ===============-->
-    
+
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
     <!--=============== CSS ===============-->
@@ -23,14 +23,20 @@ session_start();
     <link rel="stylesheet" href="assets/css/contact_contact.css">
 
     <link rel="stylesheet" href="assets/css/style_homepage.css">
-<!-- header Bachir -->
-<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.min.css">
+
+
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <title>Document</title>
 </head>
 <body>
-    
+
 <header class="header">
     <div>
       <div>
@@ -46,19 +52,16 @@ session_start();
                     <li class="navbar-item" style="display:flex; justify-content:center;">
                       <a class="navbar-link blog" id="blog"  href="/afficheArticle">Blog <span class="arrow_blog"></span></a>
                     </li>
-                    <!-- <li class="navbar-item"><a class="navbar-link" href="/proper">Property</a></li> -->
                     <li class="navbar-item">
-                      <!-- <a class="navbar-link" href="/booking">Booking</a> -->
                       <ul class="liste_reservation">
                       </ul>
                     </li>
                     <li class="navbar-item"><a class="navbar-link" href="/contact">Contacts</a></li>
-                    <!-- <li class="navbar-item"><a class="navbar-link" href="/Guest_Detail">Guest Detail</a></li> -->
                     @guest
                             @if (Route::has('login'))
                             @endif
                             @if (Route::has('register'))
-                             
+
                             @endif
                         @else
                             @if(Auth::user()->type_user == 'admin')
@@ -73,12 +76,8 @@ session_start();
                       </ul>
                     </li>
                       @endif
-                           
-                    @endguest 
-                    
-                    
-                    
-                    <!-- <li class="navbar-item"><a class="navbar-link" href="/checkoutpageA">checkout</a></li> -->
+
+                    @endguest
 
                           @guest
                           <div class="connexion_inscription" style="margin-top:-9px; display:flex;">
@@ -95,9 +94,9 @@ session_start();
                             @endif
                         @else
                         <li class="nav-item dropdown  navbar-item">
-                                                <a href="/logout" class="btn btn-danger">Déconnexion</a>                  
-                                    {{ Auth::user()->prenom}}                                     
-                            </li>                     
+                                                <a href="/logout" class="btn btn-danger">Déconnexion</a>
+                                    {{ Auth::user()->prenom}}
+                            </li>
                         @endguest
                 </div>
             </div>
@@ -130,28 +129,28 @@ session_start();
     .Amdmin_Control_container li:hover{
       background-color:white;
       padding:10px;
-      
+
     }
     .ajout_article{
       background-color:#F2F0F2;
       position:absolute;
       margin-top:30px;
-      display:flex;  
+      display:flex;
     }
     .liste_reservation{
       background-color:#F2F0F2;
       position:absolute;
       margin-top:20px;
-      display:flex;  
+      display:flex;
     }
     </style>
 
   <script>
         admin  = document.querySelector(".Amdmin_Control");
-        admin.addEventListener('mouseover', function (){ 
+        admin.addEventListener('mouseover', function (){
           appear = document.querySelector(".Amdmin_Control_container");
           appear.classList.toggle("active");
-        });        
+        });
   </script>
 <section class="section_Guest_details">
     <div class="maincontainer_Guest_details">
@@ -166,7 +165,7 @@ session_start();
                     {{ session('status') }}
                 </div>
             @endif
-           
+
             <form action="{{ route('checkoutpageA', $Critere->id) }}" method="get">
                   @csrf
                   <input type="hidden" placeholder="First name" name="property_id" value="{{$Critere->id}}" required>
@@ -180,9 +179,18 @@ session_start();
                       <input type="text"  placeholder="Email" name="email" required>
                   </div><br>
                   <div class="inputtext_guest_details">
-                  <input id="phone" name="phone" type="text" placeholder="Phone" required>
+
+
+
+
+                    <div style="display: flex; flex-direction:row; gap:10px;">
+                        <input   name="phone" type="text" value="{{ old('telephone') }}" id="phone" placeholder="Phone number" style="width:250px" class="form-control @error('telephone')  is-invalid @enderror" required autocomplete="Telephone" autofocus>
+                        <span id="valid-msg" class="hide" style="color:green"></span>
+                        <span id="error-msg" class="hide" style="color:red"></span>
+                    </div>
+                  {{-- <input id="phone" name="phone" type="text" placeholder="Phone" required> --}}
                   </div>
-                  <br> 
+                  <br>
                 <div>
                   <div class="Purpose_of_stay">
                       <p><strong>Purpose of stay</strong></p>
@@ -213,7 +221,7 @@ session_start();
         <div class="card2_guest_details">
             <div class="image_guest_details">
                 <img src="/images_property/<?=$_GET['photo']?>" alt="">
-                <input type="hidden" name="photo" id="" value="<?=$_GET['photo']?>"> 
+                <input type="hidden" name="photo" id="" value="<?=$_GET['photo']?>">
             </div><br>
             <div class="part1_guest_details">
 
@@ -229,14 +237,14 @@ session_start();
                                   <img src="/image/Vector (9).png" alt=""><input type="hidden" placeholder="move out" name="move-in" value="">
                                 </span>
                                 <?=$_GET['move_in']?>
-                                <input type="hidden" name="move_in" id="" value="<?=$_GET['move_in']?>"> 
+                                <input type="hidden" name="move_in" id="" value="<?=$_GET['move_in']?>">
                                 <br>
                             </div>
                         </div><br>
                         <div>
                             <div>
                                 <span><img src="/image/eva_people-fill.png" alt=""> Guests <?=$_GET['guest']?></span>
-                                <input type="hidden" name="guest" id="" value="<?=$_GET['guest']?>"> 
+                                <input type="hidden" name="guest" id="" value="<?=$_GET['guest']?>">
                             </div>
                             <br>
                         </div><br><br>
@@ -252,7 +260,7 @@ session_start();
                                 <input type="hidden" placeholder="move out" name="move-out" value="">
                             </span>
                             <?=$_GET['move_out']?>
-                            <input type="hidden" name="move_out" id="" value="<?=$_GET['move_out']?>"> 
+                            <input type="hidden" name="move_out" id="" value="<?=$_GET['move_out']?>">
                         </div>
                     </div>
             </div><br>
@@ -280,7 +288,7 @@ session_start();
                             $paiement_reservation = $pourcentage * $_GET['price'] / 100;
                             echo '£' .$_GET['price'] - $paiement_reservation;
                             ?>
-                            <input type="hidden" name="price" id="" value="<?=$_GET['price'] - $paiement_reservation?>"> 
+                            <input type="hidden" name="price" id="" value="<?=$_GET['price'] - $paiement_reservation?>">
                             </p>
                         </div>
                         <p>incl. VAT</p>
@@ -299,7 +307,7 @@ session_start();
                             $paiement_reservation_total = $pourcentage_total * $_GET['price'] / 100;
                             echo '£' .$_GET['price'] + $paiement_reservation_total;
                             ?>
-                              <input type="hidden" name="Pay_upon_booking" id="" value="<?=$_GET['price'] + $paiement_reservation_total?>"> 
+                              <input type="hidden" name="Pay_upon_booking" id="" value="<?=$_GET['price'] + $paiement_reservation_total?>">
                             </p>
                         </div>
                         <p>incl. VAT</p>
@@ -328,13 +336,13 @@ session_start();
                                         <p>After move-out</p>
                                     </div>
                                     <br>
-                                    <span>Receive your                 
+                                    <span>Receive your
                                     <?php
                                       $pourcentage_reçu = 11;
                                       $paiement_reservation_reçu = $pourcentage_reçu * $_GET['price'] / 100;
                                       echo '£' .$paiement_reservation_reçu;
-                                    ?> 
-                                     <input type="hidden" name="Receive_your" id="" value="<?=$paiement_reservation_reçu?>"> 
+                                    ?>
+                                     <input type="hidden" name="Receive_your" id="" value="<?=$paiement_reservation_reçu?>">
                                   <img src="/image/Vector (10).png" alt=""></span>
                                 </div>
                             </div>
@@ -343,7 +351,7 @@ session_start();
                               <?php
                                 echo '£' .$_GET['price'] + $paiement_reservation_total;
                                 ?>
-                                <input type="hidden" name="Total_costs" id="" value="<?=$_GET['price'] + $paiement_reservation_total?>"> 
+                                <input type="hidden" name="Total_costs" id="" value="<?=$_GET['price'] + $paiement_reservation_total?>">
                                 </p>
                           </div>
                     </div>
@@ -369,16 +377,16 @@ session_start();
                   <option value="PayPal">PayPal</option>
                   <option value="Master Card">Master Card</option>
                   <option value="Visa">Visa</option>
-              </select> 
+              </select>
         </div>
         <div><br>
             <p>By clicking "Book" below, I have read and agreed to the <a href="">key contract terms, cancellation policy and apartment & building rules</a> , and to pay the total amount shown.</p>
         </div>
-        <button type="submit" class="btn btn-success">Book</button>
+        <button type="submit" id="send" class="btn btn-success">Book</button>
     </div>
     <br><br><br><br>
     </form>
-   
+
 <section class="footer">
        <div class="maincontainer_footer">
              <div class="col1_footer">
@@ -506,6 +514,65 @@ session_start();
 </script>
 <link rel="stylesheet" href="/css/intlTelInput.css" />
 <script src="/js/intlTelInput.js"></script>
+
+
+
+
+<script>
+    var input = document.querySelector('#phone');
+    sendMsg = document.querySelector('#send');
+    errorMsg = document.querySelector('#error-msg');
+    validMsg = document.querySelector('#valid-msg');
+
+
+    var errorMap = ["Invalid number", "Invalid country code","Too short", "Too long"];
+
+
+    var iti = window.intlTelInput(input, {
+    utilsScript:
+    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+});
+    var reset = function() {
+        input.classList.remove("error");
+        errorMsg.innerHTML = "";
+        errorMsg.classList.add("hide");
+         validMsg.classList.add("hide");
+
+    }
+
+    input.addEventListener('blur', function(){
+        reset();
+        if(input.value.trim()){
+            if(iti.isValidNumber()){
+                validMsg.classList.remove('hide');
+            }else{
+                input.classList.add('error');
+                var errorCode = iti.getValidationError();
+                errorMsg.innerHTML = errorMap[errorCode];
+                errorMsg.classList.remove("hide");
+
+                // recherche.style.transition = "all, 0.4s ease";
+            }
+            if (errorMap[errorCode]) {
+                // alert('Veuillez-entrer le bon numéro de téléphone');
+                sendMsg = document.querySelector('#send');
+                sendMsg.style.display = "none";
+                validMsg.style.display="none";
+                }else{
+                    sendMsg = document.querySelector('#send');
+                    sendMsg.style.display = "flex";
+                    validMsg.style.display="block";
+                }
+        }
+
+    });
+
+    input.addEventListener('change', reset);
+    input.addEventListener("keyup",reset);
+</script>
+
+<link rel="stylesheet" href="assets/build/css/intlTelInput.css" />
+
     <style>
       /* Guest_detail */
 
@@ -517,11 +584,11 @@ session_start();
     line-height: 15px;
     margin-top:10px;
 }
-.footer_checkout{ 
+.footer_checkout{
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
 .Booking_review p{
    font-size: 30px;
@@ -559,10 +626,10 @@ session_start();
 {
 background: #F2F0F2;
 width: 300px;
-padding-left: 15px;   
+padding-left: 15px;
 border-radius: 10px;
 border: none;
-padding: 10px; 
+padding: 10px;
 }
 .title_Guest_Details{
     font-size: 30px;
@@ -572,7 +639,7 @@ padding: 10px;
     justify-content:center;
     gap: 100px;
     line-height: 7px;
-    
+
 }
 .ctn_part1_guest_details{
     display: flex;
@@ -596,12 +663,12 @@ padding: 10px;
     justify-content: center;
     align-items: center;
     gap: 15px;
-} 
+}
 .maincontainer_footer_guests{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 }
 .lastpart_guest_footer{
     display: flex;
@@ -636,7 +703,7 @@ padding: 10px;
         justify-content: center;
         flex-direction:row;
         flex-wrap: wrap-reverse;
-      
+
     }
     .maincontainer_Guest_details{
         display: flex;
@@ -648,11 +715,11 @@ padding: 10px;
         gap: 100px;
     }
     .part1_guest_details{
-        gap: 60px; 
+        gap: 60px;
     }
     .lastpart_guest_footer{
         gap: 50px;
-    
+
     }
     .Payment_timeline_guest{
         margin-left: 20px;
@@ -664,13 +731,13 @@ padding: 10px;
       background-color:#F2F0F2;
       position:absolute;
       margin-top:30px;
-      display:flex;  
+      display:flex;
     }
     .activeblog{
       position:absolute;
       margin-top:30px;
       display:flex;
-    } 
+    }
     .ajout_article li {
       list-style: none;
     }
@@ -690,7 +757,7 @@ padding: 10px;
     }
 
 
-     
+
  /*  booking*/
 .container_filter{
   display: flex;
@@ -714,17 +781,17 @@ padding: 10px;
  .room_card{
   display: flex;
   justify-content: center;
- 
+
  }
  .search_by{
   display: flex;
- 
+
  }
  .alert_search_result{
   display: flex;
   margin-left: 100px;
   margin-top: -30px;
-  
+
  }
  .fa-times{
   cursor: pointer;
@@ -894,7 +961,7 @@ padding: 10px;
   height:60vh;
   background: #F2F0F2;
   border-radius:10px;
-  
+
 }
 .footercardA{
   gap:10px;
@@ -915,7 +982,7 @@ padding: 10px;
   flex-direction:row;
   gap:50px;
   flex-wrap:wrap;
- 
+
 }
 .cardA_image img{
   width: 230px;
@@ -932,14 +999,14 @@ padding: 10px;
     width: 50px;
     height: 8vh;
   }
-  
+
   .container_imgslider_sectionslider {
     display: flex;
     justify-content: left;
     align-items: center;
     flex-direction: row;
     gap: 20px;
-    
+
   }
   .btnslider img{
     border-radius:30px;
@@ -982,7 +1049,7 @@ padding: 10px;
     justify-content:center;
     align-items:center;
     flex-direction:column;
-    
+
   }
   .text1_section3A{
     font-size:30px;
@@ -1139,11 +1206,11 @@ justify-content:center;
 flex-direction:column;
 background-color:rgb(226, 219, 219);
 width: 460px;
-height: 278px;  
+height: 278px;
 
 
 }
- 
+
 /* header and navbar */
  .containerheader{
   display:flex;
@@ -1192,7 +1259,7 @@ height: 278px;
   }
   .nav-toggler:focus{
     outline:none;
-    
+
   }
   .nav-toggler span{
     height:2px;
@@ -1229,7 +1296,7 @@ height: 278px;
 }
 .nav-toggler.active span::after{
   transform:rotate(135deg);
-} 
+}
 .section{
   display:flex;
   justify-content:center;
@@ -1241,12 +1308,12 @@ height: 278px;
   align-items:left;
   flex-direction:column;
    width: 293px;
-  height:236px; 
+  height:236px;
   margin-top:100px;
   background-color:#ffff;
   border-radius:10px;
   padding:20px;
- 
+
 }
 .werentlorem{
   font-size:15px;
@@ -1290,7 +1357,7 @@ height: 278px;
     padding-right: 30px;
     border-right:3px solid rgb(161, 206, 161) ;
   }
- 
+
   .barrecherche{
     position: relative;
     background-color:#ffff;
@@ -1311,7 +1378,7 @@ height: 278px;
     font-size: 20px;
     width:200px;
   }
- 
+
   .parti3{
     justify-content: center;
     align-items:center;
@@ -1383,7 +1450,7 @@ height: 278px;
   .footer{
     display:flex;
     justify-content:center;
-   
+
   }
   .ullia{
     position:absolute;
@@ -1430,7 +1497,7 @@ height: 278px;
   align-items:center;
   flex-direction:column;
   margin-top:30px;
-  
+
 
 }
 
@@ -1444,12 +1511,12 @@ height: 278px;
   align-items:left;
   flex-direction:column;
    width: 293px;
-  height:236px; 
+  height:236px;
   margin-top:100px;
   background-color:#ffff;
   border-radius:10px;
   padding:20px;
- 
+
 }
 .activecard{
   display:none;
@@ -1505,8 +1572,8 @@ height: 278px;
 }
 
   @media screen and (max-width:885px){
- 
- 
+
+
   .barrecherche{
     position: relative;
     background-color:#ffff;
@@ -1541,7 +1608,7 @@ height: 278px;
 
   }
 
- 
+
   }
 
 
@@ -1575,7 +1642,7 @@ height: 278px;
     transition:all 0.5s ease;
     }
   }
-  
+
   @media screen and (max-width:720px){
     @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap");
     .barrecherche{
@@ -1930,8 +1997,8 @@ flex-wrap:wrap;
   transition:all 0.5s ease;
   }
  }
- 
- 
+
+
   @media screen and (max-width:412px){
   .ullia{
     position:absolute;
@@ -1978,7 +2045,7 @@ flex-wrap:wrap;
   align-items:center;
   flex-direction:column;
   margin-top:30px;
-  
+
 
 }
     .barrecherche{
@@ -2000,7 +2067,7 @@ flex-wrap:wrap;
   .swiper-wrapper{
      gap: 100px;
    }
-  } 
+  }
 
   @media screen and (max-width:360px){
   .ullia{
@@ -2048,7 +2115,7 @@ flex-wrap:wrap;
   align-items:center;
   flex-direction:column;
   margin-top:30px;
-  
+
 
 }
     .barrecherche{
@@ -2087,7 +2154,7 @@ flex-wrap:wrap;
     margin-right:220px;
 
   }
-  } 
+  }
   @media screen and (max-width:280px){
   .ullia{
     position:absolute;
@@ -2134,7 +2201,7 @@ flex-wrap:wrap;
   align-items:center;
   flex-direction:column;
   margin-top:30px;
-  
+
 
 }
     .barrecherche{
@@ -2154,9 +2221,9 @@ flex-wrap:wrap;
     flex-wrap:wrap;
   }
 
-  } 
-    
-  
+  }
+
+
   </style>
 
   <script>
@@ -2169,6 +2236,5 @@ flex-wrap:wrap;
         appear.transition ="0.10";
         };
   </script>
-  
 
-  
+

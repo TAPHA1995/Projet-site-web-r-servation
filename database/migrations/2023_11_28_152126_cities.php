@@ -15,7 +15,7 @@ return new class extends Migration
             $table->string('titre');
             $table->string('contenu');
             $table->string('created_at');
-            $table->string('update_at');
+            $table->string('updated_at');
     });
     Schema::create('cities', function (Blueprint $table) {
         $table->id();

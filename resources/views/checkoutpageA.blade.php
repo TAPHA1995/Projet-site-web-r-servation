@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 ?>
 <!DOCTYPE html>
@@ -6,13 +6,13 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <!--=============== REMIXICONS ===============-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
 
     <!--=============== SWIPER CSS ===============-->
-    
+
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
     <!--=============== CSS ===============-->
@@ -24,7 +24,7 @@ session_start();
     <title>Document</title>
 </head>
 <body>
-    
+
 <header class="header">
     <div>
       <div>
@@ -50,7 +50,7 @@ session_start();
                             @if (Route::has('login'))
                             @endif
                             @if (Route::has('register'))
-                             
+
                             @endif
                         @else
                             @if(Auth::user()->type_user == 'admin')
@@ -65,7 +65,7 @@ session_start();
                       </ul>
                     </li>
                       @endif
-                    @endguest 
+                    @endguest
                           @guest
                           <div class="connexion_inscription" style="margin-top:-9px; display:flex;">
                             @if (Route::has('login'))
@@ -81,9 +81,9 @@ session_start();
                             @endif
                         @else
                         <li class="nav-item dropdown  navbar-item">
-                              <a href="/logout" class="btn btn-danger">Déconnexion</a>                  
-                                    {{ Auth::user()->prenom}}                                     
-                        </li>                     
+                              <a href="/logout" class="btn btn-danger">Déconnexion</a>
+                                    {{ Auth::user()->prenom}}
+                        </li>
                         @endguest
                 </div>
             </div>
@@ -114,19 +114,19 @@ session_start();
     .Amdmin_Control_container li:hover{
       background-color:white;
       padding:10px;
-      
+
     }
     .ajout_article{
       background-color:#F2F0F2;
       position:absolute;
       margin-top:30px;
-      display:flex;  
+      display:flex;
     }
     .liste_reservation{
       background-color:#F2F0F2;
       position:absolute;
       margin-top:20px;
-      display:flex;  
+      display:flex;
     }
     </style>
 
@@ -135,26 +135,26 @@ session_start();
         admin.addEventListener('mouseover', function (){
           appear = document.querySelector(".Amdmin_Control_container");
           appear.classList.toggle("active");
-        });        
+        });
   </script>
 
 <section class="section_Guest_details">
-    <?php  
+    <?php
     if (isset($_POST['submit'])) {
 
-      $_SESSION['rented_property_id'] = 
+      $_SESSION['rented_property_id'] =
       [
-        
-        "property_id"=>$_POST['property_id'],  
-              
+
+        "property_id"=>$_POST['property_id'],
+
       ];
       var_dump( $_SESSION['rented_property_id']['property_id']);
-    }  
+    }
     ?>
     <div class="maincontainer_Guest_details">
        <div class="maincontaier_checkout">
             <form action="{{route('envoi_final')}}" method="post" enctype="multipart/form-data">
-                @csrf    
+                @csrf
                 <div class="Booking_review">
                     <p><strong>Booking review</strong></p>
                 </div>
@@ -223,21 +223,21 @@ session_start();
                                 <p><?php $pourcentage = 26.4;
                                 $paiement_reservation = $pourcentage * $_GET['price'] / 100;
                                 $Total=$_GET['price'] + $paiement_reservation + $paiement_reservation;
-                                echo '£'.$Total?></p>                                
+                                echo '£'.$Total?></p>
                                  <input type="hidden" placehooder="Total" value="<?=$Total?>" name="Total">
                             </div>
-                        </div> 
+                        </div>
                     </div><br>
                 </div>
                       <!-- Property_id -->
-                      
+
                     <div class="footer_checkout">
                       <div>
                         <?php
-                       
+
                         // if (isset($_POST['submit'])) {
                           ?>
-                      
+
                         <input type="hidden" placehooder="property_id" value="<?=$_GET['property_id']?>" name="property_id">
                             <!-- The client's informations -->
                         <input type="hidden" placehooder="first_name" value="<?=$_GET['first_name']?>" name="first_name">
@@ -251,10 +251,10 @@ session_start();
                         <input type="hidden" placeholder="Email of the guest" name="email_of_the_guest" value="<?=$_GET['email_of_the_guest']?>">
                         <input type="hidden" placeholder="move out" name="move_in" value="<?=$_GET['move_in']?>">
                         <input type="hidden" placeholder="move out" name="move_out" value="<?=$_GET['move_out']?>">
-                        <input type="hidden" placeholder="Email of the guest" name="method_paiement" value="<?=$_GET['paiement']?>">   
+                        <input type="hidden" placeholder="Email of the guest" name="method_paiement" value="<?=$_GET['paiement']?>">
                         <?php
                         if ($_GET['paiement'] == "Wave" or $_GET['paiement'] == "Orange Money" or $_GET['paiement'] == "Free Money" or $_GET['paiement'] == "PayPal") {
-                       
+
                         if($_GET['paiement'] == "Wave") {
 
                         ?>
@@ -268,9 +268,9 @@ session_start();
                             </div>
                         </div>
                         <?php
-                         
+
                         }elseif ($_GET['paiement'] == "Orange Money") {
-                          
+
                         ?>
                         <div class="orange" style="background-color:#F2F0F2; display:flex; flex-direction:row;justify-content:center; width:460px; gap: 5px;">
                             <img src="/image/ico-orange_money.png" style="width:135px; height:30vh;" alt="">
@@ -282,10 +282,10 @@ session_start();
                             </div>
                         </div>
                         <?php
-                         
+
                         }elseif ($_GET['paiement'] == "Free Money") {
-                          
-                        
+
+
                         ?>
                         <div class="free" style="background-color:#F2F0F2; display:flex; flex-direction:row;   justify-content:center; width:460px; gap: 5px;">
                             <img src="/image/imgonline-com-ua-resize-Vd3fVrxQKg5Gqi.jpg" style="width:135px; height:20vh;" alt="">
@@ -294,17 +294,13 @@ session_start();
                                     <span>Veuillez-envoyer la somme de <strong class="text bg-danger text-light"> <?=$Total?><br> par Free money </strong>sur ce numéro: </span>
                                     <div class="bg-danger text-light" style="width: 139px;"><strong>221 77 821 55 30</strong></div>
                                 </div>
-                                <!-- <div>
-                                  <lable class="form-lable">Ensuit veillez-entrez le numéro de référence de la transaction </lable><br>
-                                  <input type="text" placeholder="ref........." class="form-control " required>
-                                </div> -->
                             </div>
                         </div>
                         <?php
-                         
+
                         }elseif ($_GET['paiement'] == "PayPal") {
                           # code...
-                    
+
                         ?>
                         <div class="paypal" style="background-color:#F2F0F2; display:flex; flex-direction:row;   justify-content:center; width:460px; gap: 5px;">
                             <img src="/image/paypal.jpg" style="width:135px; height:30vh;" alt="">
@@ -329,7 +325,7 @@ session_start();
                       <?php
                       }
                     // }
-                
+
                         ?>
                       </div>
                       <br>
@@ -350,7 +346,7 @@ session_start();
                  <div class="ctn_part1_guest_details">
                         <div>
                             <div>
-                                <p>Move in</p>                  
+                                <p>Move in</p>
                                 <span><img src="/image/Vector (9).png" alt=""> <?=$_GET['move_in']?></span>
                             </div>
                         </div><br>
@@ -362,7 +358,7 @@ session_start();
                         <div>
                             <p>All utilities are included</p>
                         </div>
-                  </div>    
+                  </div>
                     <div>
                         <div>
                             <p>Move out</p>
@@ -370,7 +366,7 @@ session_start();
                         <span><img src="/image/Vector (9).png" alt=""> <?php
                         echo $_GET['move_out'];
                         ?></span>
-                    </div>        
+                    </div>
             </div><br>
             <div class="card3_guest_details">
                 <div>
@@ -411,7 +407,7 @@ session_start();
                             $paiement_reservation_total = $pourcentage_total * $_GET['price'] / 100;
                             echo '£' .$_GET['price'] + $paiement_reservation_total;
                             ?></p>
-                        </div>                          
+                        </div>
                         <p>incl. VAT</p>
                     </div>
                 </div>
@@ -419,7 +415,7 @@ session_start();
             <div class="maincontainer_footer_guests">
                 <div class="Payment_timeline_guest">
                     <p><strong>Payment timeline</strong></p>
-                </div>     
+                </div>
                     <div class="footer_guest_detail">
                         <div class="time_line_img_guest">
                             <img src="/image/Timeline.png" alt="">
@@ -442,7 +438,7 @@ session_start();
                                       echo '£' .$paiement_reservation_reçu;
                                     ?>  <img src="/image/Vector (10).png" alt=""></span>
                                 </div>
-                            </div> 
+                            </div>
                             <div>
                                 <p><?php
                                    echo '£' .$_GET['price'] + $paiement_reservation_total;
@@ -455,7 +451,7 @@ session_start();
     </div>
     <br><br><br>
 </section>
-<br><br><br> 
+<br><br><br>
 <link rel="stylesheet" href="assets/build/css/intlTelInput.css" />
 
 <script src="/assets/build/js/intlTelInput.js"></script>
@@ -595,8 +591,8 @@ session_start();
 .footer_checkout{
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
 .Booking_review p{
    font-size: 30px;
@@ -634,10 +630,10 @@ session_start();
 {
 background: #F2F0F2;
 width: 300px;
-padding-left: 15px;   
+padding-left: 15px;
 border-radius: 10px;
 border: none;
-padding: 10px; 
+padding: 10px;
 }
 .title_Guest_Details{
     font-size: 30px;
@@ -647,7 +643,7 @@ padding: 10px;
     justify-content:center;
     gap: 100px;
     line-height: 7px;
-    
+
 }
 .ctn_part1_guest_details{
     display: flex;
@@ -671,12 +667,12 @@ padding: 10px;
     justify-content: center;
     align-items: center;
     gap: 15px;
-} 
+}
 .maincontainer_footer_guests{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 }
 .lastpart_guest_footer{
     display: flex;
@@ -711,7 +707,7 @@ padding: 10px;
         justify-content: center;
         flex-direction:row;
         flex-wrap: wrap-reverse;
-      
+
     }
     .maincontainer_Guest_details{
         display: flex;
@@ -723,11 +719,11 @@ padding: 10px;
         gap: 100px;
     }
     .part1_guest_details{
-        gap: 60px; 
+        gap: 60px;
     }
     .lastpart_guest_footer{
         gap: 50px;
-    
+
     }
     .Payment_timeline_guest{
         margin-left: 20px;
@@ -739,13 +735,13 @@ padding: 10px;
       background-color:#F2F0F2;
       position:absolute;
       margin-top:30px;
-      display:flex;  
+      display:flex;
     }
     .activeblog{
       position:absolute;
       margin-top:30px;
       display:flex;
-    } 
+    }
     .ajout_article li {
       list-style: none;
     }
@@ -765,7 +761,7 @@ padding: 10px;
     }
 
 
-     
+
  /*  booking*/
 .container_filter{
   display: flex;
@@ -789,17 +785,17 @@ padding: 10px;
  .room_card{
   display: flex;
   justify-content: center;
- 
+
  }
  .search_by{
   display: flex;
- 
+
  }
  .alert_search_result{
   display: flex;
   margin-left: 100px;
   margin-top: -30px;
-  
+
  }
  .fa-times{
   cursor: pointer;
@@ -969,7 +965,7 @@ padding: 10px;
   height:60vh;
   background: #F2F0F2;
   border-radius:10px;
-  
+
 }
 .footercardA{
   gap:10px;
@@ -990,7 +986,7 @@ padding: 10px;
   flex-direction:row;
   gap:50px;
   flex-wrap:wrap;
- 
+
 }
 .cardA_image img{
   width: 230px;
@@ -1007,14 +1003,14 @@ padding: 10px;
     width: 50px;
     height: 8vh;
   }
-  
+
   .container_imgslider_sectionslider {
     display: flex;
     justify-content: left;
     align-items: center;
     flex-direction: row;
     gap: 20px;
-    
+
   }
   .btnslider img{
     border-radius:30px;
@@ -1057,7 +1053,7 @@ padding: 10px;
     justify-content:center;
     align-items:center;
     flex-direction:column;
-    
+
   }
   .text1_section3A{
     font-size:30px;
@@ -1214,11 +1210,11 @@ justify-content:center;
 flex-direction:column;
 background-color:rgb(226, 219, 219);
 width: 460px;
-height: 278px;  
+height: 278px;
 
 
 }
- 
+
 /* header and navbar */
  .containerheader{
   display:flex;
@@ -1267,7 +1263,7 @@ height: 278px;
   }
   .nav-toggler:focus{
     outline:none;
-    
+
   }
   .nav-toggler span{
     height:2px;
@@ -1304,7 +1300,7 @@ height: 278px;
 }
 .nav-toggler.active span::after{
   transform:rotate(135deg);
-} 
+}
 .section{
   display:flex;
   justify-content:center;
@@ -1316,12 +1312,12 @@ height: 278px;
   align-items:left;
   flex-direction:column;
    width: 293px;
-  height:236px; 
+  height:236px;
   margin-top:100px;
   background-color:#ffff;
   border-radius:10px;
   padding:20px;
- 
+
 }
 .werentlorem{
   font-size:15px;
@@ -1365,7 +1361,7 @@ height: 278px;
     padding-right: 30px;
     border-right:3px solid rgb(161, 206, 161) ;
   }
- 
+
   .barrecherche{
     position: relative;
     background-color:#ffff;
@@ -1386,7 +1382,7 @@ height: 278px;
     font-size: 20px;
     width:200px;
   }
- 
+
   .parti3{
     justify-content: center;
     align-items:center;
@@ -1458,7 +1454,7 @@ height: 278px;
   .footer{
     display:flex;
     justify-content:center;
-   
+
   }
   .ullia{
     position:absolute;
@@ -1505,7 +1501,7 @@ height: 278px;
   align-items:center;
   flex-direction:column;
   margin-top:30px;
-  
+
 
 }
 
@@ -1519,12 +1515,12 @@ height: 278px;
   align-items:left;
   flex-direction:column;
    width: 293px;
-  height:236px; 
+  height:236px;
   margin-top:100px;
   background-color:#ffff;
   border-radius:10px;
   padding:20px;
- 
+
 }
 .activecard{
   display:none;
@@ -1580,8 +1576,8 @@ height: 278px;
 }
 
   @media screen and (max-width:885px){
- 
- 
+
+
   .barrecherche{
     position: relative;
     background-color:#ffff;
@@ -1616,7 +1612,7 @@ height: 278px;
 
   }
 
- 
+
   }
 
 
@@ -1650,7 +1646,7 @@ height: 278px;
     transition:all 0.5s ease;
     }
   }
-  
+
   @media screen and (max-width:720px){
     @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap");
     .barrecherche{
@@ -2005,8 +2001,8 @@ flex-wrap:wrap;
   transition:all 0.5s ease;
   }
  }
- 
- 
+
+
   @media screen and (max-width:412px){
   .ullia{
     position:absolute;
@@ -2053,7 +2049,7 @@ flex-wrap:wrap;
   align-items:center;
   flex-direction:column;
   margin-top:30px;
-  
+
 
 }
     .barrecherche{
@@ -2075,7 +2071,7 @@ flex-wrap:wrap;
   .swiper-wrapper{
      gap: 100px;
    }
-  } 
+  }
 
   @media screen and (max-width:360px){
   .ullia{
@@ -2123,7 +2119,7 @@ flex-wrap:wrap;
   align-items:center;
   flex-direction:column;
   margin-top:30px;
-  
+
 
 }
     .barrecherche{
@@ -2162,7 +2158,7 @@ flex-wrap:wrap;
     margin-right:220px;
 
   }
-  } 
+  }
   @media screen and (max-width:280px){
   .ullia{
     position:absolute;
@@ -2209,7 +2205,7 @@ flex-wrap:wrap;
   align-items:center;
   flex-direction:column;
   margin-top:30px;
-  
+
 
 }
     .barrecherche{
@@ -2229,9 +2225,9 @@ flex-wrap:wrap;
     flex-wrap:wrap;
   }
 
-  } 
-    
-  
+  }
+
+
   </style>
 
   <script>
@@ -2244,6 +2240,5 @@ flex-wrap:wrap;
         appear.transition ="0.10";
         };
   </script>
-  
 
-  
+
