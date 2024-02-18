@@ -1,0 +1,372 @@
+.searchfilter-y8j {
+    align-items: center;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 22.8rem;
+    left: 0;
+    padding: 2rem 18.8rem 3.6rem 18.8rem;
+    position: absolute;
+    row-gap: 2rem;
+    top: 8.3rem;
+    width: 144rem;
+  
+    .search-G7q {
+      align-items: center;
+      background-color: #ffffff;
+      border: solid 0.4rem #064749;
+      border-radius: 4rem;
+      box-sizing: border-box;
+      display: flex;
+      flex-shrink: 0;
+      height: 6rem;
+      padding: 0.6rem 0.6rem 0.6rem 4rem;
+      width: 100%;
+  
+      .select-a-city-a8X {
+        align-items: center;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: flex;
+        flex-shrink: 0;
+        height: calc(100% - 2.4rem);
+        margin: 1.2rem 6.96rem 1.2rem 0rem;
+        padding: 0rem 0.1rem 0rem 0.25rem;
+  
+        .eva-search-fill-ffm {
+          flex-shrink: 0;
+          height: 1.5005rem;
+          margin: 0rem 1.45rem 0rem 0rem;
+          object-fit: contain;
+          vertical-align: top;
+          width: 1.5005rem;
+        }
+        .select-a-city-zi3 {
+          color: #171917;
+          flex-shrink: 0;
+          font-family: Lato, 'Source Sans Pro';
+          font-size: 1.8rem;
+          font-weight: 700;
+          line-height: 1.3333333333;
+          white-space: nowrap;
+        }
+      }
+      .line-3-Xhy {
+        background-color: #49735a;
+        flex-shrink: 0;
+        height: 4.8rem;
+        margin-right: 6.86rem;
+        width: 0.1rem;
+      }
+      .check-g55 {
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        flex-shrink: 0;
+        height: calc(100% - 2.4rem);
+        margin: 1.2rem 6.96rem 1.2rem 0rem;
+  
+        .check-in-QFy {
+          align-items: center;
+          box-sizing: border-box;
+          display: flex;
+          flex-shrink: 0;
+          height: 100%;
+          margin-right: 1.5333rem;
+          padding-left: 0.25rem;
+  
+          .eva-calendar-fill-k4w {
+            flex-shrink: 0;
+            height: 1.6667rem;
+            margin: 0rem 1.05rem 0rem 0rem;
+            object-fit: contain;
+            vertical-align: top;
+            width: 1.5rem;
+          }
+          .move-in-UFq {
+            color: #171917;
+            flex-shrink: 0;
+            font-family: Lato, 'Source Sans Pro';
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 1.3333333333;
+            white-space: nowrap;
+          }
+        }
+        .eva-arrow-forward-fill-pKh {
+          flex-shrink: 0;
+          height: 1.1668rem;
+          margin: 0rem 1.533rem 0rem 0rem;
+          object-fit: contain;
+          vertical-align: top;
+          width: 1.3333rem;
+        }
+        .move-out-wfD {
+          color: #171917;
+          flex-shrink: 0;
+          font-family: Lato, 'Source Sans Pro';
+          font-size: 1.8rem;
+          font-weight: 700;
+          line-height: 1.3333333333;
+          white-space: nowrap;
+        }
+      }
+      .line-4-VAw {
+        background-color: #49735a;
+        flex-shrink: 0;
+        height: 4.8rem;
+        margin-right: 6.86rem;
+        width: 0.1rem;
+      }
+      .guests-EPR {
+        align-items: center;
+        display: flex;
+        flex-shrink: 0;
+        height: calc(100% - 2.4rem);
+        margin: 1.2rem 6.96rem 1.2rem 0rem;
+  
+        .guests-NEj {
+          align-items: center;
+          box-sizing: border-box;
+          display: flex;
+          flex-shrink: 0;
+          height: 100%;
+          margin-right: 2rem;
+          padding-left: 0.1667rem;
+  
+          .eva-people-fill-7i7 {
+            flex-shrink: 0;
+            height: 1.5rem;
+            margin-right: 0.9666rem;
+            object-fit: contain;
+            vertical-align: top;
+            width: 1.6667rem;
+          }
+          .guests-G5D {
+            color: #171917;
+            flex-shrink: 0;
+            font-family: Lato, 'Source Sans Pro';
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 1.3333333333;
+            white-space: nowrap;
+          }
+        }
+        .quantity-QSK {
+          align-items: center;
+          box-sizing: border-box;
+          display: flex;
+          flex-shrink: 0;
+          height: 100%;
+          padding: 0rem 0.4rem 0rem 0.4rem;
+  
+          .eva-plus-fill-wSF {
+            flex-shrink: 0;
+            height: 1.6rem;
+            margin-right: 1.6rem;
+            object-fit: contain;
+            vertical-align: top;
+            width: 1.6rem;
+          }
+          .item-1-GDd {
+            color: #171917;
+            flex-shrink: 0;
+            font-family: Lato, 'Source Sans Pro';
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 1.3333333333;
+            margin-right: 1.6rem;
+            white-space: nowrap;
+          }
+          .eva-minus-fill-oUT {
+            flex-shrink: 0;
+            height: 0.2rem;
+            object-fit: contain;
+            vertical-align: top;
+            width: 1.6rem;
+          }
+        }
+      }
+      .button-search-LzB {
+        align-items: center;
+        background-color: #064749;
+        border-radius: 4rem;
+        color: #ffffff;
+        display: flex;
+        flex-shrink: 0;
+        font-family: Lato, 'Source Sans Pro';
+        font-size: 1.8rem;
+        font-weight: 700;
+        height: 100%;
+        justify-content: center;
+        line-height: 1.3333333333;
+        white-space: nowrap;
+        width: 13.4rem;
+      }
+    }
+    .filters-ans-sorting-D2P {
+      align-items: center;
+      display: flex;
+      flex-shrink: 0;
+      height: 4.8rem;
+      width: 100%;
+  
+      .buttons-YqM {
+        align-items: center;
+        display: flex;
+        flex-shrink: 0;
+        height: 100%;
+        margin-right: 46.5rem;
+  
+        .filtres-WGP {
+          cursor: pointer;
+          flex-shrink: 0;
+          height: 100%;
+          margin-right: 4rem;
+          width: 20rem;
+  
+          .button-more-filters-rr3 {
+            align-items: center;
+            background-color: #064749;
+            border-radius: 4rem;
+            box-sizing: border-box;
+            display: flex;
+            height: 100%;
+            padding: 1.2rem 2.5rem 1.2rem 2rem;
+            width: 100%;
+  
+            .more-filters-njh {
+              color: #ffffff;
+              flex-shrink: 0;
+              font-family: Lato, 'Source Sans Pro';
+              font-size: 1.8rem;
+              font-weight: 700;
+              line-height: 1.3333333333;
+              margin-right: 4.9999rem;
+              white-space: nowrap;
+            }
+            .eva-arrow-down-fill-jQ3 {
+              flex-shrink: 0;
+              height: 0.75rem;
+              margin-bottom: 0.3166rem;
+              object-fit: contain;
+              vertical-align: top;
+              width: 1.0002rem;
+            }
+          }
+        }
+        .parking-3vX {
+          align-items: center;
+          border-radius: 4rem;
+          box-sizing: border-box;
+          display: flex;
+          flex-shrink: 0;
+          height: 100%;
+          padding: 1.2rem 2.5rem 1.2rem 2rem;
+  
+          .text-ndD {
+            align-items: center;
+            display: flex;
+            flex-shrink: 0;
+            height: 100%;
+            margin-right: 2.2995rem;
+  
+            .fa-solid-car-alt-k4F {
+              flex-shrink: 0;
+              height: 2rem;
+              margin-right: 0.8rem;
+              object-fit: contain;
+              vertical-align: top;
+              width: 2rem;
+            }
+            .parking-HZy {
+              color: #171917;
+              flex-shrink: 0;
+              font-family: Lato, 'Source Sans Pro';
+              font-size: 1.8rem;
+              font-weight: 400;
+              line-height: 1.3333333333;
+              white-space: nowrap;
+            }
+          }
+          .eva-close-fill-DiX {
+            flex-shrink: 0;
+            height: 1.0008rem;
+            margin-top: 0.0002rem;
+            object-fit: contain;
+            vertical-align: top;
+            width: 1.001rem;
+          }
+        }
+      }
+      .sort-by-w8j {
+        align-items: center;
+        display: flex;
+        flex-shrink: 0;
+        height: calc(100% - 2.4rem);
+        margin: 1.2rem 0;
+  
+        .sort-by--5Vq {
+          color: #171917;
+          flex-shrink: 0;
+          font-family: Lato, 'Source Sans Pro';
+          font-size: 1.8rem;
+          font-weight: 700;
+          line-height: 1.3333333333;
+          margin-right: 1.2rem;
+          white-space: nowrap;
+        }
+        .availability-Dc3 {
+          align-items: center;
+          box-sizing: border-box;
+          display: flex;
+          flex-shrink: 0;
+          height: 100%;
+          padding-right: 0.4999rem;
+  
+          .availability-xpX {
+            color: #49735a;
+            flex-shrink: 0;
+            font-family: Lato, 'Source Sans Pro';
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 1.3333333333;
+            margin-right: 0.9999rem;
+            white-space: nowrap;
+          }
+          .eva-arrow-down-fill-W5M {
+            flex-shrink: 0;
+            height: 0.75rem;
+            margin-top: 0.0834rem;
+            object-fit: contain;
+            vertical-align: top;
+            width: 1.0002rem;
+          }
+        }
+      }
+    }
+    .results-for-1-bedroom-property-in-west-london-qNX {
+      align-items: baseline;
+      color: #171917;
+      display: flex;
+      flex-shrink: 0;
+      font-family: Lato, 'Source Sans Pro';
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1.25;
+      margin-right: 69.2rem;
+      white-space: nowrap;
+  
+      .results-for-1-bedroom-property-in-west-london-qNX-sub-0 {
+        color: #171917;
+        font-family: Lato, 'Source Sans Pro';
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 1.3333333333;
+      }
+      /* .results-for-1-bedroom-property-in-west-london-qNX-sub-1 {
+      } */
+    }
+  }
+  

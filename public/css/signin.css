@@ -1,0 +1,259 @@
+.sign-in,
+.sign-in * {
+  box-sizing: border-box;
+}
+.sign-in {
+  background: var(--white, #ffffff);
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  box-shadow: 2px 2px 6px 0px rgba(175, 175, 175, 0.25);
+}
+.title-sign-in {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.create-your-account {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-h-3, 700 36px/44px "Lato", sans-serif);
+  position: relative;
+}
+.sign-in2 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.or-sign-in-with {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitle, 400 18px/24px "Lato", sans-serif);
+  position: relative;
+  margin-top:  5px;
+}
+.email {
+  color: var(--green, #064749);
+  text-align: left;
+  font: var(--desktop-subtitle, 400 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.gmail {
+  color: var(--green, #064749);
+  text-align: left;
+  font: var(--desktop-subtitle, 400 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.facebook {
+  color: var(--green, #064749);
+  text-align: left;
+  font: var(--desktop-subtitle, 400 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.input-first-name {
+  background: var(--bg, #f2f0f2);
+  border-radius: 12px;
+  padding: 12px 40px 12px 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 430px;
+  position: relative;
+}
+.first-name {
+  color: #49735a;
+  text-align: left;
+  font: var(--desktop-subtitle, 400 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.input-last-name {
+  background: var(--bg, #f2f0f2);
+  border-radius: 12px;
+  padding: 12px 40px 12px 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 430px;
+  position: relative;
+}
+.last-name {
+  color: #49735a;
+  text-align: left;
+  font: var(--desktop-subtitle, 400 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.input-email {
+  background: var(--bg, #f2f0f2);
+  border-radius: 12px;
+  padding: 12px 40px 12px 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 430px;
+  position: relative;
+}
+.email2 {
+  color: #49735a;
+  text-align: left;
+  font: var(--desktop-subtitle, 400 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.input-password {
+  background: var(--bg, #f2f0f2);
+  border-radius: 12px;
+  padding: 12px 40px 12px 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 430px;
+  position: relative;
+}
+.password {
+  color: #49735a;
+  text-align: left;
+  font: var(--desktop-subtitle, 400 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+._1 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start; 
+  align-self: stretch; 
+  flex-shrink: 0;
+  position: relative;
+  left: 33%;
+}
+.checkbox {
+  flex-shrink: 0;
+  width: 52px;
+  height: 53px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.checkbox input {
+  margin-right: 8px;
+}
+
+/* .form-check-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+} */
+
+.rectangle-227 {
+  background: var(--bg, #f2f0f2);
+  border-radius: 10px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 0px;
+  top: 0.86px;
+}
+
+.i-want-to-receive-updates-about-offers-news-city-launches-and-exclusive-deals {
+  color: var(--text, #181a18);
+  text-align: center;
+  justify-content: flex-start;
+  font: var(--desktop-textregular, 400 16px/20px "Lato", sans-serif);
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.button-create-account {
+  background: var(--green, #064749);
+  border-radius: 40px;
+  padding: 12px 40px 12px 40px;
+  display: flex;
+  flex-direction: row;
+  font-size: 22px;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  color: #ffffff;
+  margin-top: 10px;
+}
+.create-account {
+  color: var(--white, #ffffff);
+  text-align: left;
+  font: var(--desktop-subtitlebold, 900 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.already-have-an-account {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-h-4, 700 18px/28px "Lato", sans-serif);
+  position: relative;
+}
+.log-in {
+  color: var(--green, #064749);
+  text-align: left;
+  font: var(--desktop-h-4, 700 18px/28px "Lato", sans-serif);
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+}
+.by-creating-an-account-you-agree-to-our-terms-of-service-and-privacy-policy {
+  text-align: center;
+  font: var(--undefined, 400 16px/20px "Lato", sans-serif);
+  position: relative;
+}
+.by-creating-an-account-you-agree-to-our-terms-of-service-and-privacy-policy-span {
+  color: var(--text, #181a18);
+  font: var(--desktop-textregular, 400 16px/20px "Lato", sans-serif);
+}
+.by-creating-an-account-you-agree-to-our-terms-of-service-and-privacy-policy-span2 {
+  color: var(--green, #064749);
+  font: 400 16px/20px "Lato", sans-serif;
+  text-decoration: underline;
+}
+.by-creating-an-account-you-agree-to-our-terms-of-service-and-privacy-policy-span3 {
+  color: var(--text, #181a18);
+  font: var(--desktop-textregular, 400 16px/20px "Lato", sans-serif);
+}
+.by-creating-an-account-you-agree-to-our-terms-of-service-and-privacy-policy-span4 {
+  color: var(--green, #064749);
+  font: 400 16px/20px "Lato", sans-serif;
+  text-decoration: underline;
+}

@@ -1,0 +1,1533 @@
+.booking-page,
+.booking-page * {
+  box-sizing: border-box;
+}
+.booking-page {
+  background: var(--white, #ffffff);
+  width: 1140px;
+  height: 3203px;
+  position: absolute;
+  /* overflow: hidden; */
+}
+.apartments {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 758px;
+  position: absolute;
+  left: 80px;
+  top: 311px;
+}
+.blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 756px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(-1, 1);
+}
+._1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(-1, 1);
+}
+._12 {
+  background: var(--bg, #f2f0f2);
+  border-radius: 60px 60px 60px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.rectangle-222 {
+  border-radius: 60px 0px 0px 12px;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 305px;
+  position: relative;
+}
+.text {
+  padding: 20px 32px 20px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.title-subtitle {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(-1, 1);
+}
+.rhoncus-suspendisse-penatibus-mauris-sit-non {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitlebold, 700 18px/24px "Lato", sans-serif);
+  position: relative;
+  align-self: stretch;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(-1, 1);
+}
+._3-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(-1, 1);
+}
+.points {
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(-1, 1);
+}
+.bedroom-bath {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.bedroom {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.fluent-bed-24-filled {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.group { 
+  position: absolute;
+  left: 1.67px;
+  top: 3.33px;
+  overflow: visible;
+}
+._1-bedroom {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-description, 400 14px/16px "Lato", sans-serif);
+  position: relative;
+}
+.bath {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.fa-solid-bath {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+._1-bath {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-description, 400 14px/16px "Lato", sans-serif);
+  position: relative;
+}
+.wi-fi {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.eva-wifi-fill {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.group2 {
+  position: absolute;
+  left: 1.69px;
+  top: 3.34px;
+  overflow: visible;
+}
+.wi-fi2 {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-description, 400 14px/16px "Lato", sans-serif);
+  position: relative;
+}
+.city-view-3rd-floor-elevator-parking {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-description, 400 14px/16px "Lato", sans-serif);
+  position: relative;
+  align-self: stretch;
+}
+.price-availability {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(-1, 1);
+}
+.availability {
+  background: #49735a;
+  border-radius: 30px;
+  padding: 4px 20px 4px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+._2 {
+  background: var(--bg, #f2f0f2);
+  border-radius: 60px 60px 60px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.group3 {
+  position: absolute;
+  left: 1.67px;
+  top: 3.33px;
+  overflow: visible;
+}
+._2-bedroom {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-description, 400 14px/16px "Lato", sans-serif);
+  position: relative;
+}
+.fa-solid-bath2 {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+._2-bath {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-description, 400 14px/16px "Lato", sans-serif);
+  position: relative;
+}
+.group4 {
+  position: absolute;
+  left: 1.69px;
+  top: 3.34px;
+  overflow: visible;
+}
+._22 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 756px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(-1, 1);
+}
+.group5 {
+  position: absolute;
+  left: 1.67px;
+  top: 3.33px;
+  overflow: visible;
+}
+.fa-solid-bath3 {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.group6 {
+  position: absolute;
+  left: 1.69px;
+  top: 3.34px;
+  overflow: visible;
+}
+.group7 {
+  position: absolute;
+  left: 1.67px;
+  top: 3.33px;
+  overflow: visible;
+}
+.fa-solid-bath4 {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.group8 {
+  position: absolute;
+  left: 1.69px;
+  top: 3.34px;
+  overflow: visible;
+}
+._3 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 756px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(-1, 1);
+}
+.group9 {
+  position: absolute;
+  left: 1.67px;
+  top: 3.33px;
+  overflow: visible;
+}
+.fa-solid-bath5 {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.group10 {
+  position: absolute;
+  left: 1.69px;
+  top: 3.34px;
+  overflow: visible;
+}
+.group11 {
+  position: absolute;
+  left: 1.67px;
+  top: 3.33px;
+  overflow: visible;
+}
+.fa-solid-bath6 {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.group12 {
+  position: absolute;
+  left: 1.69px;
+  top: 3.34px;
+  overflow: visible;
+}
+._4 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 756px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(-1, 1);
+}
+.group13 {
+  position: absolute;
+  left: 1.67px;
+  top: 3.33px;
+  overflow: visible;
+}
+.fa-solid-bath7 {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.group14 {
+  position: absolute;
+  left: 1.69px;
+  top: 3.34px;
+  overflow: visible;
+}
+.group15 {
+  position: absolute;
+  left: 1.67px;
+  top: 3.33px;
+  overflow: visible;
+}
+.fa-solid-bath8 {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.group16 {
+  position: absolute;
+  left: 1.69px;
+  top: 3.34px;
+  overflow: visible;
+}
+.button-show-more-apartments {
+  background: var(--green, #064749);
+  border-radius: 40px;
+  padding: 12px 40px 12px 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.show-more-apartments {
+  color: var(--white, #ffffff);
+  text-align: left;
+  font: var(--desktop-subtitlebold, 700 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.title-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 80px;
+  top: 2203px;
+}
+.apartments-for-rent-in-london {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-h-3, 700 36px/44px "Lato", sans-serif);
+  position: relative;
+  width: 1280px;
+}
+.a-truly-global-city-london-has-long-been-considered-a-cutting-edge-metropolis-and-hub-for-culture-style-and-finance-with-each-borough-tube-zone-and-neighborhood-of-london-sporting-its-own-vibe-and-lifestyle-advantages-it-can-be-downright-difficult-to-settle-on-where-to-look-for-a-furnished-apartment-in-london-whether-you-re-a-digital-nomad-looking-for-a-studio-apartment-in-london-or-just-seeking-a-month-to-month-rental-in-london-blueground-has-you-covered-with-a-pub-on-almost-every-corner-and-beautiful-parks-in-all-major-neighborhoods-you-ll-feel-right-at-home-across-all-of-blueground-s-exquisite-london-flats-furnished-apartment-rentals-in-london-getting-the-most-out-of-living-in-london-starts-with-securing-a-furnished-flat-for-rent-fortunately-blueground-s-flats-for-rent-across-london-marry-convenient-locations-close-to-public-transportation-top-notch-interiors-and-modern-furnishings-and-support-from-our-local-team-zero-in-on-the-ideal-serviced-apartment-in-london-from-studios-to-two-bedroom-apartments-by-filtering-for-your-date-area-and-must-have-amenities-on-our-site-moving-to-london-has-never-been-simpler-the-choice-is-yours-from-chelsea-to-soho-to-shoreditch-always-within-a-short-walk-from-tube-stops-and-local-hangouts-show-up-and-start-living-in-your-new-london-accommodation-with-furnishings-and-a-fully-equipped-setup-taken-care-of-before-your-arrival-by-the-team-at-blueground-so-book-today-and-move-in-tomorrow-so-you-can-enjoy-all-a-blueground-london-flat-has-to-offer-premium-work-from-home-setups-a-user-friendly-guest-app-service-flexible-contracts-and-a-booking-process-free-of-broker-s-fees-and-stresses {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-textregular, 400 16px/20px "Lato", sans-serif);
+  position: relative;
+  width: 1180px;
+}
+.frequently-asked-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1080px;
+  position: absolute;
+  left: 80px;
+  top: 2539px;
+}
+.questions {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.question-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.text2 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.integer-morbi-semper-sodales-sit-facilisi-habitant-pulvinar-sed-venenatis {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-h-4, 700 24px/32px "Lato", sans-serif);
+  position: relative;
+}
+.magnis-congue-neque-sociis-ut-nisl-quis-dui-lobortis-lectus-viverra {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-textregular, 400 16px/20px "Lato", sans-serif);
+  position: relative;
+}
+.close {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.question-11 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.massa-massa-nulla-rhoncus-a-quam-consectetur-sed-purus-enim {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-h-4, 700 24px/32px "Lato", sans-serif);
+  position: relative;
+}
+.nunc-molestie-sit-in-sed-sodales-bibendum-pharetra-id-viverra-suspendisse-pharetra-ac-aenean-neque-sodales-ornare-penatibus-eros-consectetur-potenti-in-feugiat-purus-posuere-amet-sodales-nibh-eget-a-et-a-ante-pretium-praesent-elementum-feugiat-pharetra-congue {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-textregular, 400 16px/20px "Lato", sans-serif);
+  position: relative;
+  width: 1000px;
+}
+.close2 {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.question-3 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.dignissim-congue-rutrum-pretium-nunc-sed-nibh-vitae-tortor-ut {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-h-4, 700 24px/32px "Lato", sans-serif);
+  position: relative;
+}
+.close3 {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.question-4 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.vulputate-imperdiet-fusce-vivamus-nunc-leo-morbi-scelerisque-in {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-h-4, 700 24px/32px "Lato", sans-serif);
+  position: relative;
+}
+.close4 {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.question-5 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.sit-rhoncus-rhoncus-malesuada-massa-adipiscing-arcu-semper-ut-in {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-h-4, 700 24px/32px "Lato", sans-serif);
+  position: relative;
+}
+.close5 {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.question-6 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.vulputate-nisl-non-neque-iaculis-lacus-dui-habitant-gravida {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-h-4, 700 24px/32px "Lato", sans-serif);
+  position: relative;
+}
+.close6 {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.question-7 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.est-felis-a-velit-at-vitae-venenatis-rhoncus {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-h-4, 700 24px/32px "Lato", sans-serif);
+  position: relative;
+}
+.close7 {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.question-8 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.eget-nam-accumsan-elementum-accumsan-imperdiet-eu-cras {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-h-4, 700 24px/32px "Lato", sans-serif);
+  position: relative;
+}
+.close8 {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.question-9 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.fermentum-et-semper-aliquet-justo-facilisis {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-h-4, 700 24px/32px "Lato", sans-serif);
+  position: relative;
+  width: 1000px;
+}
+.close9 {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.question-10 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.a-vulputate-est-diam-tempus-condimentum-in {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-h-4, 700 24px/32px "Lato", sans-serif);
+  position: relative;
+}
+.close10 {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.footer {
+  width: 1280px;
+  height: 192px;
+  position: absolute;
+  left: 80px;
+  bottom: 60px;
+}
+.logo {
+  width: 130px;
+  height: 58px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.icons-copyright {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 20px;
+  top: 84px;
+}
+.contact-number-02033074477 {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-textregular, 400 16px/20px "Lato", sans-serif);
+  position: relative;
+}
+.frame-5 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.eva-linkedin-fill {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+}
+.group17 {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  overflow: visible;
+}
+.eva-facebook-fill {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.eva-twitter-fill {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+._2021-flex-living {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-textregular, 400 16px/20px "Lato", sans-serif);
+  position: relative;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 384px;
+  top: 0px;
+}
+._13 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.company {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitlebold, 700 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.home {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitle, 400 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.about-us {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitle, 400 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.our-team {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitle, 400 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+._23 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.guests {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitlebold, 700 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.blog {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitle, 400 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.faq {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitle, 400 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.career {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitle, 400 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+._32 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.privacy {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitlebold, 700 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.terms-of-service {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitle, 400 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.privacy-policy {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitle, 400 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.stay-up-yo-date {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 886px;
+  top: 0px;
+}
+.frame-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.stay-up-to-date {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitlebold, 700 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.be-the-first-to-know-about-our-newest-apartments {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitle, 400 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.input-email-address {
+  background: var(--bg, #f2f0f2);
+  border-radius: 12px;
+  padding: 12px 40px 12px 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.email-address {
+  color: #49735a;
+  text-align: left;
+  font: var(--desktop-subtitle, 400 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.button-subscribe {
+  background: var(--green, #064749);
+  border-radius: 40px;
+  padding: 12px 40px 12px 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.subscribe {
+  color: var(--white, #ffffff);
+  text-align: left;
+  font: var(--desktop-subtitlebold, 700 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.map {
+  width: 480px;
+  height: 796px;
+  position: sticky;
+  left: 880px;
+  top: 311px;
+}
+.map2 {
+  border-radius: 10px;
+  width: 480px;
+  height: 796px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.numbers {
+  width: 235px;
+  height: 273px;
+  position: absolute;
+  left: 135px;
+  top: 299px;
+}
+._40 {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 149px;
+  top: 121px;
+}
+.bg {
+  background: var(--bg, #f2f0f2);
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #49735a;
+  border-width: 8px;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+._402 {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitlebold, 700 18px/24px "Lato", sans-serif);
+  position: absolute;
+  left: 20px;
+  top: 18px;
+}
+._122 {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 58px;
+  top: 0px;
+}
+.bg2 {
+  background: var(--bg, #f2f0f2);
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #49735a;
+  border-width: 6px;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+._123 {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitlebold, 700 18px/24px "Lato", sans-serif);
+  position: absolute;
+  left: 14px;
+  top: 12px;
+}
+._8 {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  top: 173px;
+}
+.bg3 {
+  background: var(--bg, #f2f0f2);
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #49735a;
+  border-width: 4px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+._82 {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitlebold, 700 18px/24px "Lato", sans-serif);
+  position: absolute;
+  left: 15px;
+  top: 8px;
+}
+._14 {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 195px;
+  top: 48px;
+}
+._15 {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitlebold, 700 18px/24px "Lato", sans-serif);
+  position: absolute;
+  left: 15px;
+  top: 8px;
+}
+._24 {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 155px;
+  top: 233px;
+}
+._25 {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitlebold, 700 18px/24px "Lato", sans-serif);
+  position: absolute;
+  left: 15px;
+  top: 8px;
+}
+._20 {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: -60px;
+  top: 31px;
+}
+._202 {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitlebold, 700 18px/24px "Lato", sans-serif);
+  position: absolute;
+  left: 20px;
+  top: 18px;
+}
+._16 {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 203px;
+  top: -79px;
+}
+._162 {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitlebold, 700 18px/24px "Lato", sans-serif);
+  position: absolute;
+  left: 14px;
+  top: 12px;
+}
+._26 {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 83px;
+  top: -150px;
+}
+.button-plus {
+  background: var(--green, #064749);
+  border-radius: 10px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  left: 420px;
+  top: 20px;
+}
+.eva-plus-fill {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.button-minus {
+  background: var(--green, #064749);
+  border-radius: 10px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  left: 420px;
+  top: 68px;
+}
+.eva-minus-fill {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.search-filter {
+  width: 1440px;
+  height: 228px;
+  position: relative;
+  left: 0px;
+  top: 0;
+.bg4 {
+  background: var(--white, #ffffff);
+  width: 1440px;
+  height: 228px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.search {
+  background: var(--white, #ffffff);
+  border-radius: 40px;
+  border-style: solid;
+  border-color: var(--green, #064749);
+  border-width: 4px;
+  padding: 6px 6px 6px 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1064px;
+  position: absolute;
+  left: 188px;
+  top: 20px;
+}
+.select-a-city {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.eva-search-fill {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.select-a-city2 {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitlebold, 700 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.line-3 {
+  border-style: solid;
+  border-color: #49735a;
+  border-width: 1px 0 0 0;
+  flex-shrink: 0;
+  width: 45px;
+  height: 43px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.check {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.check-in {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.eva-calendar-fill {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.move-in {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitlebold, 700 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.eva-arrow-forward-fill {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.move-out {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitlebold, 700 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.line-4 {
+  border-style: solid;
+  border-color: #49735a;
+  border-width: 1px 0 0 0;
+  flex-shrink: 0;
+  width: 45px;
+  height: 43px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.guests2 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.guests3 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.eva-people-fill {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.quantity {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.eva-plus-fill2 {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+._17 {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitlebold, 700 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.eva-minus-fill2 {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.button-search {
+  background: var(--green, #064749);
+  border-radius: 40px;
+  padding: 12px 40px 12px 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.search2 {
+  color: var(--white, #ffffff);
+  text-align: left;
+  font: var(--desktop-subtitlebold, 700 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.filters-ans-sorting {
+  padding: 0px 188px 0px 188px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1440px;
+  position: absolute;
+  left: 0px;
+  top: 100px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.filtres {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.button-more-filters {
+  background: var(--green, #064749);
+  border-radius: 40px;
+  padding: 12px 20px 12px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 200px;
+  position: relative;
+}
+.more-filters {
+  color: var(--white, #ffffff);
+  text-align: left;
+  font: var(--desktop-subtitlebold, 700 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.eva-arrow-down-fill {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.parking {
+  border-radius: 40px;
+  padding: 12px 20px 12px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.text3 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.fa-solid-car-alt {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.parking2 {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitle, 400 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.eva-close-fill {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.on-map-sort-by {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  right: 344px;
+}
+.sort-by {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.sort-by2 {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitlebold, 700 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.availability2 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.availability3 {
+  color: #49735a;
+  text-align: left;
+  font: var(--desktop-subtitlebold, 700 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.eva-arrow-down-fill2 {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+._52-results-for-1-bedroom-property-in-west-london {
+  color: var(--text, #181a18);
+  text-align: left;
+  position: absolute;
+  left: 188px;
+  top: 168px;
+}
+._52-results-for-1-bedroom-property-in-west-london-span {
+  color: var(--text, #181a18);
+  font: var(--desktop-subtitlebold, 700 18px/24px "Lato", sans-serif);
+}
+._52-results-for-1-bedroom-property-in-west-london-span2 {
+  color: var(--text, #181a18);
+  font: var(--desktop-textregular, 400 16px/20px "Lato", sans-serif);
+}
+.menu2 {
+  background: var(--white, #ffffff);
+  padding: 0px 60px 0px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  width: 1440px;
+  height: 83px;
+  position: sticky;
+  left: 0px;
+  top: 0px;
+}
+.menu3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 1300px;
+  position: relative;
+}
+.logo2 {
+  flex-shrink: 0;
+  width: 130px;
+  height: 58px;
+  position: relative;
+}
+.menu4 {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.landloards {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitle, 400 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+.contacts {
+  color: var(--text, #181a18);
+  text-align: left;
+  font: var(--desktop-subtitle, 400 18px/24px "Lato", sans-serif);
+  position: relative;
+}
+}

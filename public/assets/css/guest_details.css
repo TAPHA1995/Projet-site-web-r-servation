@@ -1,0 +1,149 @@
+
+.Total_charges{
+    margin-top: 8px;
+}
+.price_checkout{
+    line-height: 15px;
+    margin-top:10px;
+}
+.footer_checkout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+.Booking_review p{
+   font-size: 30px;
+}
+.RUM_checkout{
+    display: flex;
+    gap: 200px;
+}
+.maincontaier_checkout{
+    display: flex;
+    flex-direction: column;
+}
+.booking_guest_detail p{
+    font-size: 30px;
+}
+.maincontainer_book{
+    width: 400px;
+    margin-left: 200px;
+}
+.section_Guest_details{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.maincontainer_Guest_details{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap-reverse;
+    gap: 250px;
+}
+.image_guest_details img{
+    width: 400px;
+}
+.inputtext_guest_details input
+{
+background: #F2F0F2;
+width: 300px;
+padding-left: 15px;   
+border-radius: 10px;
+border: none;
+padding: 10px; 
+}
+.title_Guest_Details{
+    font-size: 30px;
+}
+.part1_guest_details{
+    display: flex;
+    justify-content:center;
+    gap: 100px;
+    line-height: 7px;
+    
+}
+.ctn_part1_guest_details{
+    display: flex;
+    flex-direction:column;
+}
+.card2_guest_details{
+    background: #F2F0F2;
+
+}
+.card3_guest_details{
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+}
+.prices_guest_details{
+    line-height: 9px;
+}
+.footer_guest_detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+} 
+.maincontainer_footer_guests{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.lastpart_guest_footer{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+
+}
+.Reserve_Due_After_Receive{
+    line-height: 20px;
+}
+.time_line_img_guest{
+    margin-top: -40px;
+}
+.Payment_timeline_guest{
+    margin-left: 15px;
+}
+@media screen and (max-width:500px) {
+    .maincontainer_Guest_details{
+        display: flex;
+        justify-content: center;
+        flex-direction:row;
+        flex-wrap: wrap-reverse;
+        gap: 100px;
+    }
+    .RUM_checkout{
+        gap: 100px;
+    }
+}
+@media screen and (max-width:360px) {
+    .maincontainer_Guest_details{
+        display: flex;
+        justify-content: center;
+        flex-direction:row;
+        flex-wrap: wrap-reverse;
+      
+    }
+    .maincontainer_Guest_details{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap-reverse;
+        /* width: 100px; */
+    }
+    .card3_guest_details{
+        gap: 100px;
+    }
+    .part1_guest_details{
+        gap: 60px; 
+    }
+    .lastpart_guest_footer{
+        gap: 50px;
+    
+    }
+    .Payment_timeline_guest{
+        margin-left: 20px;
+    }
+}

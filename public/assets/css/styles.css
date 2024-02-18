@@ -1,0 +1,186 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  
+  --container-color: hsl(0, 0%, 100%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Bai Jamjuree", sans-serif;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--white-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/*=============== CARD ===============*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card__container {
+  padding-block: 5rem;
+  
+}
+
+.card__content {
+  margin-inline: 1.75rem;
+  border-radius: 1.25rem;
+  overflow:visible;
+}
+
+.card__article {
+  width: 300px; /* Remove after adding swiper js */
+  border-radius: 1.25rem;
+  overflow: visible;
+}
+
+
+.card__data {
+  background: #F2F0F2;
+  color: black;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  text-align:left;
+  position: relative;
+  width:500px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+
+.card__shadow {
+  width: 200px;
+  height: 200px;
+  background-color: var(--first-color-alt);
+  border-radius: 50%;
+  position: absolute;
+  top: 3.75rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  filter: blur(45px);
+}
+
+.card__name {
+  font-size: var(--h2-font-size);
+  color: var(--second-color);
+  margin-bottom: .75rem;
+}
+
+.card__description {
+  display: flex;
+  justify-content:left;
+  align-items: left;
+}
+
+.card__button {
+  display: inline-block;
+  background-color: var(--first-color);
+  padding: .75rem 1.5rem;
+  border-radius: .25rem;
+  color:#F2F0F2;
+  font-weight: 600;
+}
+
+/* Swiper class */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "";
+}
+
+
+
+.swiper-button-prev {
+
+  margin-top:130px;
+  margin-left:380px;
+}
+.swiper-button-next {
+  margin-top:130px;
+  margin-right:380px;
+
+}
+
+
+.swiper-pagination-bullet {
+  background-color: hsl(0, 0%, 100%);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--second-color);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .card__data {
+    padding: 1rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 767px) {
+  .card__content {
+    margin-inline: 3rem;
+  }
+
+
+
+  .swiper-button-prev {
+    left: -1rem;
+    margin-top:130px;
+    margin-left:380px;
+  }
+  .swiper-button-next {
+    right: -1rem;
+    margin-top:130px;
+    margin-right:380px;
+
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1120px) {
+  .card__container {
+    position: absolute;
+    max-width: 851px;
+  }
+
+  .swiper-button-prev {
+    left: -1rem;
+    margin-top:130px;
+    margin-left:380px;
+  }
+  .swiper-button-next {
+    right: -1rem;
+    margin-top:130px;
+    margin-right:380px;
+
+  }
+}
