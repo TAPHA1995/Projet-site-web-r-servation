@@ -354,26 +354,26 @@
 
 </style>
 
-  </head>
+      </head>
   <body>
-    <!-- Main_landlord -->
-    <section  class="main">
-        <div class="container">
-            <div class="row col-sm-12 justify-content-end">
-                <div class="col-lg-6 col-md-10 col-sm-12">
-                    <div class="form-box px-5">
-                        <div class="row">
-                        @if (session('success'))
-    <div class="alert alert-success">
-        {{ session('success') }}
-    </div>
-@endif
+                            <!-- Main_landlord -->
+                            <section  class="main">
+                                <div class="container">
+                                    <div class="row col-sm-12 justify-content-end">
+                                        <div class="col-lg-6 col-md-10 col-sm-12">
+                                            <div class="form-box px-5">
+                                                <div class="row">
+                                                @if (session('success'))
+                            <div class="alert alert-success">
+                                {{ session('success') }}
+                            </div>
+                        @endif
 
-@if (session('error'))
-    <div class="alert alert-danger">
-        {{ session('error') }}
-    </div>
-@endif
+                        @if (session('error'))
+                            <div class="alert alert-danger">
+                                {{ session('error') }}
+                            </div>
+                        @endif
                         </div>
                         <form action="{{route('store_critere')}}" method="post" enctype="multipart/form-data">
                         @csrf
